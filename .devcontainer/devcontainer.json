@@ -1,0 +1,38 @@
+{
+  "name": "Dev Container",
+  "context": "..",
+  "dockerFile": "../Dockerfile",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": true,
+          "source.organizeImports": true
+        },
+        "files.eol": "\n"
+      },
+      "extensions": [
+        "zhuangtongfa.material-theme",
+        "dbaeumer.vscode-eslint",
+        "aaron-bond.better-comments",
+        "qwtel.sqlite-viewer",
+        "EditorConfig.EditorConfig",
+        "IronGeek.vscode-env",
+        "eamodio.gitlens",
+        "GitLab.gitlab-workflow",
+        "GitHub.vscode-pull-request-github",
+        "Orta.vscode-jest",
+        "DavidAnson.vscode-markdownlint",
+        "christian-kohler.npm-intellisense",
+        "esbenp.prettier-vscode",
+        "cweijan.vscode-office",
+        "gamunu.vscode-yarn",
+        "adpyke.codesnap",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "postCreateCommand": "yarn"
+}
